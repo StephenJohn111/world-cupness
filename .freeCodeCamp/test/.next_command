@@ -39,3 +39,22 @@ chmod +x queries.sh
 psql --username=freecodecamp --dbname=worldcup
 git init
 git add .
+git commit -m "Final commit for World Cup Database project"
+git remote remove origin
+git remote add origin https://github.com/StephenJohn111/worldcup-database-project.git
+git branch -M main
+git commit -m "Initial commit for World Cup Database project"
+git remote remove origin
+git remote add origin https://github.com/StephenJohn111/world-cupness.git
+git remote -v
+git branch -M main
+git push -u origin main
+chmod +x insert_data.sh queries.sh
+./insert_data.sh
+psql --username=freecodecamp --dbname=worldcup -c "SELECT COUNT(*) FROM teams;"
+./queries.sh
+./insert_data.sh
+psql --username=freecodecamp --dbname=worldcup -c "SELECT COUNT(*) FROM teams;"
+./queries.sh
+./insert_data.sh
+./queries.sh
